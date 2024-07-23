@@ -1,0 +1,24 @@
+Dear Apple,
+This app is integrated with the Linea Pro handheld cradle device (by Infinite Peripherals) for rapid barcode scanning.
+The manufacturer asked that when we submit our app that we include the following PPIDs for you:
+102789-0001
+102789-0005
+102789-0006
+102789-0007
+102789-0008
+102789-0009
+102789-0010
+102789-0010
+102789-0011
+102789-0012
+102789-0013
+102789-0014
+
+Below is some basic information on how to use the app.
+Once you start the app, you will be prompted to log into it. You can use the Demo Account Information below to log in.
+After you have successfully logged into the app, there will be a "Sync Device" button on the bottom of the home screen.
+You will need to tap that button and then tap the "Download Everything" button on the Sync Options view. This will download all of the test customer information you need in order to test the app.
+
+As customary with Linea Pro based apps, only certain views have the Barcode scanner API enabled. You should be able to scan any UPC style barcode with the scanner. We can gladly provide you with some sample barcodes to scan, however any 1D barcode will read.
+
+Thanks Again for all of your great work!

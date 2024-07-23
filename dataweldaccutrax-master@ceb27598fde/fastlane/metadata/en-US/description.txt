@@ -1,0 +1,3 @@
+DataWeld’s AcuTrax software has been designed to meet the unique requirements of moveable assets such as compressed gas cylinders in the welding supply industry, oxygen cylinders in the home medical industry, totes, drums and cylinders in the chemical industry as well as ton containers and cylinders in the chlorine industry. Regardless of your industry, if you have cylinders, and they move, you need help tracking them and AcuTrax was developed to help you track every movement of your cylinder or container.
+
+It is also integrated with Infinite Peripherals Linea Pro series of Barcode Scanners for super fast barcode scanning.

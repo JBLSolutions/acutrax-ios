@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodaysStops">
+            <connections>
+                <outlet property="activityMain" destination="6" id="7"/>
+                <outlet property="lblNetworkStatus" destination="15" id="16"/>
+                <outlet property="sbMain" destination="12" id="13"/>
+                <outlet property="tblData" destination="5" id="11"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                    <rect key="frame" x="0.0" y="56" width="414" height="792"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.34000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="9"/>
+                        <outlet property="delegate" destination="-1" id="10"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                    <rect key="frame" x="142" y="165" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <searchBar contentMode="redraw" placeholder="Search for Customer..." translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="14"/>
+                    </connections>
+                </searchBar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                    <rect key="frame" x="0.0" y="848" width="414" height="0.0"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="15" firstAttribute="top" secondItem="5" secondAttribute="bottom" id="6vm-x6-Bja"/>
+                <constraint firstItem="15" firstAttribute="top" secondItem="5" secondAttribute="bottom" id="HYP-cq-geh"/>
+                <constraint firstItem="5" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="HzG-5P-QFE"/>
+                <constraint firstAttribute="bottom" secondItem="15" secondAttribute="bottom" constant="48" id="IQH-u4-Jat"/>
+                <constraint firstAttribute="trailing" secondItem="12" secondAttribute="trailing" id="T2a-my-mLq"/>
+                <constraint firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="Usp-uq-zPS"/>
+                <constraint firstItem="5" firstAttribute="top" secondItem="12" secondAttribute="bottom" id="WDL-3c-1Ex" userLabel="Table View.top = Search Bar.bottom"/>
+                <constraint firstItem="12" firstAttribute="top" secondItem="1" secondAttribute="top" id="dFv-v7-Ghb"/>
+                <constraint firstItem="12" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="fcV-et-BRc"/>
+                <constraint firstItem="15" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="oVM-O6-Mkl"/>
+                <constraint firstAttribute="trailing" secondItem="15" secondAttribute="trailing" id="uUn-ki-FYF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="148.66071428571428"/>
+        </view>
+    </objects>
+</document>

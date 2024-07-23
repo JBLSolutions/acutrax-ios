@@ -1,0 +1,8 @@
+app_identifier("com.dataweld.acutrax") # The bundle identifier of your app
+apple_id("michael.lambert@praeses.com") # Your Apple email address
+
+itc_team_id("1738460") # App Store Connect Team ID
+team_id("982F33GL49") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

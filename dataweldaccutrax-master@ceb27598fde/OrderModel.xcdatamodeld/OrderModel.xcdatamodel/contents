@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Customer" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citystate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pkid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zzVendor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zzzCustomerID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Cylinder_Type" syncable="YES">
+        <attribute name="ct_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_hazcls" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ct_prop1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_prop2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_prop3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_prop4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_prop5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_track" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="ct_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_unno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ct_volmnt" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="customer_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pkid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Device_Transaction" syncable="YES">
+        <attribute name="batch_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bill_of_lading" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="common_carrier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="company_letter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_city_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cylinder_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cylinder_volume" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date_shipped" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dock_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gas_expiration_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="line_item" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lot_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manifest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownership_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="po_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="product" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="registration_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="release_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shipper_reference" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transaction_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transaction_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transaction_source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transaction_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transaction_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="truck_number" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Order" syncable="YES">
+        <attribute name="customer" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="driver" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="order_created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="order_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pkid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="po_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Order_Item" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cylinder_type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="line_number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="order_item_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="order_type" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Tag" syncable="YES">
+        <attribute name="customerid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cylindertype" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pkid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="serial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Customer" positionX="160" positionY="192" width="128" height="225"/>
+        <element name="Cylinder_Type" positionX="160" positionY="192" width="128" height="28"/>
+        <element name="Device_Transaction" positionX="160" positionY="192" width="128" height="570"/>
+        <element name="Order" positionX="-56" positionY="63" width="128" height="148"/>
+        <element name="Order_Item" positionX="-218" positionY="69" width="128" height="133"/>
+        <element name="Tag" positionX="160" positionY="192" width="128" height="120"/>
+    </elements>
+</model>
